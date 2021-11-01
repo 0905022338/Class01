@@ -1,0 +1,29 @@
+ class Cal_area{
+int r;
+double  volume1 ;
+double  volume2 ;
+double pi;
+int lon;
+int width;
+int hige;
+
+
+ }
+public class Class01 {
+public static void main(String args[]) {
+	Cal_area obj;
+	obj= new Cal_area();
+	obj.r=10;
+	obj.pi=3.14159;
+	obj.lon=4;
+	obj.width=5;
+	obj.hige=6;
+
+	obj.volume1= 4/3*obj.pi*obj.r*obj.r*obj.r;
+	obj.volume2=obj.lon* obj.width*2+obj.lon*obj.hige*2+obj.width*obj.hige*2;
+	System.out.println("球型體積="+obj.volume1);
+	System.out.println("立方體表面積="+obj.volume2);
+}
+
+
+}
